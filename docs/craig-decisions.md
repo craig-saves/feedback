@@ -4,7 +4,7 @@ Read this ledger before work in `craig-saves/feedback`.
 
 - Owner: Craig. Entries below paraphrase his decisions; they are not quotations.
 - Source: [CS-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-139), including the current bot and PostHog Surveys amendment recorded on 2026-10-28 at 07:27:49.906 UTC.
-- [Hub canonical ledger](https://github.com/craig-saves/craigsaves/blob/main/docs/craig-decisions.md) owns cross-section rules. Its publication and anchors are pending verification by the Hub coordinator before this PR merges. Links below use the planned explicit IDs; they do not prove live publication.
+- [Hub canonical ledger](https://github.com/craig-saves/craigsaves/blob/main/docs/craig-decisions.md) owns cross-section rules. Hub PR61 merged on 2026-10-28 at 14:37:53 UTC as this [immutable publication](https://github.com/craig-saves/craigsaves/blob/de15a87e3accb75f64132e71191ae484409870eb/docs/craig-decisions.md). The current-main API receipt matches that publication; all 15 linked anchors are present. History: earlier checks on 2026-10-28 found the ledger absent (404), before publication. This PR still requires independent final-head review.
 - Current decisions are binding within their scope. Product entries are cross-section reference. They do not authorize product work in this repository.
 - Status of this backfill: decisions recorded from source receipts. Product implementation and live behavior are not verified by this documentation change.
 - Task links use the route verified from installed BB source. Browser rendering of those links is not verified.
