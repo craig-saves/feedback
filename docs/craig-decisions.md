@@ -11,12 +11,12 @@ Read this ledger before work in `craig-saves/feedback`.
 
 ## Record each new decision
 
-1. Record an immediate receipt on the owning task when CraigSaves bot relays a Craig instruction, preference, or decision.
+1. Record an immediate receipt on the owning task when Craig gives an instruction, preference, or decision directly, or CraigSaves bot relays one.
 2. Add the dated decision to this ledger in the same relevant PR flow. Link cross-section rules to the Hub canonical entry. Keep the task receipt while publication is pending.
 3. State the section, source task, requested outcome, and verified status separately. Preserve source receipts and superseded history. Mark paraphrases; quote only exact source text.
 4. The coordinator obtains independent review and relevant checks at the final head, then merges without asking Craig. Children do not merge. A new head needs a new verdict. Report merged results on CS-121; Hub consolidates this rollout.
 
-The routine merge rule preserves standing safety and verification gates. Never touch production data, secrets, DNS, or Coolify under this documentation task. Do not send test messages to real users, bypass checks or hooks, rewrite main, or force-push another owner's branch. Preserve correction-round history and explicit stop decisions. These entries do not grant exceptions to unrelated task gates.
+The routine merge rule preserves standing safety and verification gates. Never touch production data, secrets, DNS, or Coolify under this documentation task. Do not send test messages to real users, bypass checks or hooks, rewrite main, or force-push another owner's branch. Preserve correction-round history and explicit stop decisions. Mark a stop as superseded when a later Craig decision replaces it within a stated scope. These entries do not grant exceptions to unrelated task gates.
 
 <a id="craig-2026-10-28-01"></a>
 ## 01 — Merge after review and checks
@@ -50,8 +50,8 @@ The routine merge rule preserves standing safety and verification gates. Never t
 ## 04 — Use GitHub failure emails
 
 - Date: 2026-10-28. Scope: all sections, including feedback.
-- Decision: Craig does not use Slack. Do not add Slack alerts. GitHub failure emails are sufficient.
-- Sources: [CC-123](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CC-123), [CS-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-139).
+- Decision: Craig does not use Slack. Remove existing Slack alert steps and Slack secret references from workflows. Do not add Slack alerts. GitHub failure emails are sufficient.
+- Sources: [CC-123](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CC-123), receipt `01M60NCFT2PY4BSPQEJR9CJYJX` at 07:07:55.587 UTC; [CS-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-139).
 - [Canonical decision 04](https://github.com/craig-saves/craigsaves/blob/main/docs/craig-decisions.md#craig-2026-10-28-04).
 - Status: current communication preference. No alert configuration changed here.
 
@@ -71,7 +71,7 @@ The routine merge rule preserves standing safety and verification gates. Never t
 - Date: 2026-10-28. Scope: Net worth and Hub; cross-section reference here.
 - Decision: move toward public pages that need no login. Make `/net-worth` a public, indexable landing page with its own canonical URL and sign-up/sign-in actions. Anonymous visitors must not be redirected to sign in. Keep the Hub sitemap entry. A person's own account and private data remain protected by login.
 - Beyond NW-4, propose other public Net worth pages or tools on CS-121, then build them in the owning section's work flow. No Hub proxy or navigation edit is authorized here.
-- Sources: [NW-4](https://craigsaves.getbb.app/plugins/tasks/tasks/task/NW-4), source receipt dated 2026-10-28 at 07:10:20.923 UTC; [CS-121](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-121), [CS-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-139).
+- Sources: [NW-4](https://craigsaves.getbb.app/plugins/tasks/tasks/task/NW-4), receipt `01M60NGXQVRYNW3H1EB9ZZF8HY` dated 2026-10-28 at 07:10:20.923 UTC; [CS-121](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-121), [CS-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-139).
 - [Canonical decision 06](https://github.com/craig-saves/craigsaves/blob/main/docs/craig-decisions.md#craig-2026-10-28-06).
 - History: the latest decision keeps the sitemap entry and supersedes the earlier exclusion proposal.
 - Status: desired outcome from NW-4. Public access, canonical tags, account protection, and completion are not verified here.
@@ -81,17 +81,18 @@ The routine merge rule preserves standing safety and verification gates. Never t
 
 - Date: 2026-10-28. Scope: Places; cross-section reference here.
 - Decision: fix the navigation bug and three live React 418 hydration errors fully. Diagnosis alone is insufficient. Find the cause with a fresh approach, reproduce with production builds, add a regression test that fails before the fix, and verify that the live errors stop after the reviewed repair.
-- Sources: [CS-98](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-98), repair request at 07:08:16.024 UTC and earlier STOP receipt at 06:25:35.433 UTC; [CS-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-139).
+- Sources: [CS-98](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-98), fresh repair grant `01M60ND3RRGJV7PJMM71M9VDCA` at 07:08:16.024 UTC and earlier STOP receipt at 06:25:35.433 UTC; [CS-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-139).
 - [Canonical decision 07](https://github.com/craig-saves/craigsaves/blob/main/docs/craig-decisions.md#craig-2026-10-28-07).
-- History: initial PR66 failed. Correction round 1, PR67, failed valid-missing 404 acceptance. Correction round 2, PR69, failed production hydration. The later full-repair request supersedes diagnosis-only scope; it does not erase these failures or reset correction rounds. Separate PL-4 STOP remains unchanged.
-- Status: full repair desired. No technical PASS, restored correction allowance, production access, or repair completion is claimed here. The Places coordinator retains the evidence and task gates.
+- History: initial PR66 failed. Correction round 1, PR67, failed valid-missing 404 acceptance. Correction round 2, PR69, failed production hydration. Craig's 07:08:16.024 UTC grant authorizes the fresh repair approach and supersedes the earlier STOP for that approach. The failed history remains recorded. This is not a blanket correction-budget reset.
+- Related PL-4 decision: receipt `01M60RCSQHQASC38F436RS4KA2` at 08:00:31.477 UTC supersedes the former STOP and photo allowance. Allow crawling of public Places pages and public data. Disallow photo/image proxy paths and private, account, and private API paths. Reference the sitemap if one exists. No separate photo address is needed. Source: [PL-4](https://craigsaves.getbb.app/plugins/tasks/tasks/task/PL-4).
+- Status: the fresh CS-98 repair is authorized; technical acceptance remains pending. After review and tests pass, the Places coordinator merges and deploys, confirms React 418 errors stop in production, then reports on CS-121. PL-4 implementation, merge, and deployment are also authorized within that decision's scope. No product PASS, completion, or production access is verified or granted by this documentation PR. Current safety, private-data, and release restrictions remain in force.
 
 <a id="craig-2026-10-28-08"></a>
 ## 08 — Show Full price and group Shopping variants
 
 - Date: 2026-10-28. Scope: Shopping; cross-section reference here.
-- Decision: Amazon cards show Full price (RRP) on the price ruler, as Coles cards do. Group flavour, colour, and scent variants into one card when the product, retailer, size, and price match. Run a daily check for missed groups.
-- Sources: [ST-138](https://craigsaves.getbb.app/plugins/tasks/tasks/task/ST-138) for Full price; [ST-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/ST-139) for grouping and the daily check; [CS-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-139).
+- Decision: Amazon cards show Full price (RRP) on the price ruler, as Coles cards do. Group flavour, colour, and scent variants into one card when the product, retailer, size, and price match. CraigSaves bot owns the daily page check and records missed groups in ST-139 task comments. No new worker automation is assigned.
+- Sources: [ST-138](https://craigsaves.getbb.app/plugins/tasks/tasks/task/ST-138) for Full price; [ST-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/ST-139) for grouping and the daily check, coordinator receipt `01M60QRPPHGR4T25CS5TC0PFFS` at 07:49:33.009 UTC; [CS-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-139).
 - [Canonical decision 08](https://github.com/craig-saves/craigsaves/blob/main/docs/craig-decisions.md#craig-2026-10-28-08).
 - Status: requested outcomes from the CS-139 backfill. No Shopping implementation or daily check is created or verified here.
 
