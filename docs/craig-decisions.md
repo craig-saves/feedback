@@ -123,3 +123,43 @@ The routine merge rule preserves standing safety and verification gates. Never t
 - [Canonical decision 11](https://github.com/craig-saves/craigsaves/blob/main/docs/craig-decisions.md#craig-2026-10-28-11).
 - History: this replaces only Grok Bot's current contact role, including the old name in standing order 18. Preserve truthful historical Grok receipts, including [CS-135](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-135).
 - Status: current routing rule. No bot, factory, schedule, or saved automation configuration is changed by this PR.
+
+<a id="craig-2026-10-28-12"></a>
+## 12 — Record the scoped Woolworths recovery grant
+
+- Date: 2026-10-28. Scope: Shopping only; Hub reference for feedback.
+- Decision: at 6:48pm Brisbane, Craig authorized a one-off laptop script to re-check 2,344 Woolworths items now. Do not wait for the next by-ID cycle. The existing Shopping recovery thread owns execution.
+- Limits: dry-run first and report counts. Read and update prices only. No notifications, deletion, or exposure of dotenv values. Report the final Buyable count against about 26,500 before the outage, plus remaining missing items and reasons.
+- Sources: [CS-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-139), user receipt `01M60W7P2SRY5A5EMCNR9BK36E` at 09:07:38.201 UTC; selected original user turn from `thr_wnkxny5pdr`, 6:48pm Brisbane.
+- [Canonical decision 12](https://github.com/craig-saves/craigsaves/blob/main/docs/craig-decisions.md#craig-2026-10-28-12).
+- Status: scoped authority recorded. The counts are source targets, not verified results. This docs task starts no script or data action.
+
+<a id="craig-2026-10-28-13"></a>
+## 13 — Ship approved docs through the normal PR process
+
+- Date: 2026-10-28. Scope: already approved docs work, including this feedback correction.
+- Decision: at 7:06pm Brisbane, Craig directed agents to proceed through pstack without another approval request. Ship approved AGENTS, CLAUDE, and docs changes through normal review, tests, merge, and report.
+- If legitimate edits or commits are blocked, repair the worker environment narrowly on the laptop and report the exact change. Use supported permission mechanisms. Preserve failed attempts and any automatic approval review denial. Do not disable checks or use unrestricted access. Do not touch secrets, dotenv, Coolify, DNS, or production data.
+- Sources: [CS-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-139), user receipt `01M60W7P2SRY5A5EMCNR9BK36E` at 09:07:38.201 UTC; selected original user turn from `thr_wnkxny5pdr`, 7:06pm Brisbane, and the Hub relay applying it to this docs preparation.
+- [Canonical decision 13](https://github.com/craig-saves/craigsaves/blob/main/docs/craig-decisions.md#craig-2026-10-28-13).
+- History: this supersedes the 6:24pm request for another approval card for these already approved docs. It does not approve unrelated work or bypass permission controls.
+- Status: current docs authority. No environment repair is performed by this PR. The coordinator retains final review, merge, and report duties.
+
+<a id="craig-2026-10-28-14"></a>
+## 14 — Record the Shopping local-script docs approval
+
+- Date: 2026-10-28. Scope: Shopping docs only; Hub reference for feedback.
+- Decision: Craig approved a short AGENTS local-scripts note, the catalogue Run locally table, and CLAUDE job-description corrections with a catalogue link. The Shopping procedure covers local Coles and Woolworths imports, by-ID checks, backfills, and probes. Dry-run and report counts before a repair or backfill. Never print, log, or copy dotenv values.
+- History: the 6:24pm wording described `cspecials` as half-price. The 7:06pm correction says every Coles special. `cimport` covers the full Coles catalogue. `wimport` covers the full Woolworths catalogue, including recovery. No further `wspecials` meaning is inferred here.
+- Sources: [CS-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-139), user receipt `01M60W7P2SRY5A5EMCNR9BK36E` at 09:07:38.201 UTC; selected original user turns from `thr_wnkxny5pdr`, 6:24pm and 7:06pm Brisbane.
+- [Canonical decision 14](https://github.com/craig-saves/craigsaves/blob/main/docs/craig-decisions.md#craig-2026-10-28-14).
+- Status: Shopping approval and amendment recorded. This is no blanket Hub production grant. No Shopping file or local procedure changes in this PR.
+
+<a id="craig-2026-10-28-15"></a>
+## 15 — Record the specific Shopping timeout decision
+
+- Date: 2026-10-28. Scope: the Shopping Coolify deployment timeout reported in the recovery thread only.
+- Decision: at 6:24pm Brisbane, Craig said to ignore the one-off `api.github.com` timeout unless it recurs. No automatic retry job, API token, or support report. On recurrence, record it on CS-121 and flag CraigSaves bot.
+- Sources: [CS-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-139), user receipt `01M60W7P2SRY5A5EMCNR9BK36E` at 09:07:38.201 UTC; selected original user turn from `thr_wnkxny5pdr`, 6:24pm Brisbane.
+- [Canonical decision 15](https://github.com/craig-saves/craigsaves/blob/main/docs/craig-decisions.md#craig-2026-10-28-15).
+- Status: scoped response rule recorded. This is not a waiver for other deployment failures. No deployment action or recovery result is claimed here.
