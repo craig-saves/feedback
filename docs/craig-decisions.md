@@ -149,11 +149,13 @@ The routine merge rule preserves standing safety and verification gates. Never t
 ## 14 — Record the Shopping local-script docs approval
 
 - Date: 2026-10-28. Scope: Shopping docs only; Hub reference for feedback.
-- Decision: Craig approved a short AGENTS local-scripts note, the catalogue Run locally table, and CLAUDE job-description corrections with a catalogue link. The Shopping procedure covers local Coles and Woolworths imports, by-ID checks, backfills, and probes. Dry-run and report counts before a repair or backfill. Never print, log, or copy dotenv values.
-- History: the 6:24pm wording described `cspecials` as half-price. The 7:06pm correction says every Coles special. `cimport` covers the full Coles catalogue. `wimport` covers the full Woolworths catalogue, including recovery. No further `wspecials` meaning is inferred here.
-- Sources: [CS-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-139), user receipt `01M60W7P2SRY5A5EMCNR9BK36E` at 09:07:38.201 UTC; selected original user turns from `thr_wnkxny5pdr`, 6:24pm and 7:06pm Brisbane.
+- Current decision: PR645 contains only `docs/supermarket-catalogue.md`, for the Run locally table. Craig dropped its AGENTS.md import-note and CLAUDE.md job-description edits. The Shopping coordinator owns review and merge.
+- After that merge, only the original worker is instructed to discard its uncommitted docs edits and not open another docs PR. This relay assigns no cleanup or operational action to this repository or another owner.
+- History: the 6:24pm approval and 7:06pm amendment covered a short AGENTS local-scripts note, the catalogue Run locally table, and CLAUDE job-description corrections with a catalogue link. The Shopping procedure covers local Coles and Woolworths imports, by-ID checks, backfills, and probes. Dry-run and report counts before a repair or backfill. Never print, log, or copy dotenv values.
+- Script history: the 6:24pm wording described `cspecials` as half-price. The 7:06pm correction says every Coles special. `cimport` covers the full Coles catalogue. `wimport` covers the full Woolworths catalogue, including recovery. No further `wspecials` meaning is inferred here.
+- Sources: [CS-139](https://craigsaves.getbb.app/plugins/tasks/tasks/task/CS-139), user receipt `01M60W7P2SRY5A5EMCNR9BK36E` at 09:07:38.201 UTC; selected original user turns from `thr_wnkxny5pdr`, 6:24pm and 7:06pm Brisbane. The later User block in that thread on 28 October restricts PR645 to the catalogue file. Its exact time is unresolved.
 - [Canonical decision 14](https://github.com/craig-saves/craigsaves/blob/main/docs/craig-decisions.md#craig-2026-10-28-14).
-- Status: Shopping approval and amendment recorded. This is no blanket Hub production grant. No Shopping file or local procedure changes in this PR.
+- Status: the earlier docs scope is partly superseded. Separate CS-139 mandatory ledger-read, decision-capture, and coordinator-only-merge pointers in AGENTS.md and CLAUDE.md remain required. No PR645 merge or product acceptance is claimed. No blanket production authority, workflow edit, or operational action is assigned here.
 
 <a id="craig-2026-10-28-15"></a>
 ## 15 — Record the specific Shopping timeout decision
